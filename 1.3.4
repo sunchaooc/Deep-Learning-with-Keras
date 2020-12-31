@@ -63,3 +63,7 @@ verbose=VERBOSE, validation_split=VALIDATION_SPLIT)
 score=model.evaluate(X_test, Y_test, verbose=VERBOSE)
 print("Test loss：", score[0])
 print('Test accuracy：', score[1])
+
+#两个隐层 训练集准确率0.9448 验证集的准确率0.9458 测试集的准确率0.9469
+#一个隐层 训练集准确率0.9314 验证集的准确率0.9334 测试集的准确率0.9343
+#三个隐层 训练集准确率0.9526 验证集的准确率0.9528 测试集的准确率0.9495
