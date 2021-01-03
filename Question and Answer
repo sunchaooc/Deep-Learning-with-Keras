@@ -1,0 +1,7 @@
+tensorflow.python.framework.errors_impl.FailedPreconditionError: Error while reading resource variable _AnonymousVar33 from Container: localhost. This could mean that the variable was uninitialized. Not found: Resource localhost/_AnonymousVar33/N10tensorflow3VarE does not exist.
+[[node mul_1/ReadVariableOp (defined at /Users/xxx/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py:1751) ]] [Op:__inference_keras_scratch_graph_2262]
+Function call stack:
+keras_scratch_graph
+
+这个问题是因为显卡资源被另一个程序占据。
+解决办法：关闭别的程序，重新启动jupyter notebook
